@@ -93,9 +93,9 @@ gulp.task('pngsprite', function () {
   .pipe(spriteSmith({
     imgName: 'sprite.png',                                                  // Как назвать спрайт
     imgPath: "../img/sprite.png",                                           // Какой путь прописывать к спрайту
-    retinaImgName: 'sprite@2x.png',                                         // Как назвать Retina спрайт 
-    retinaSrcFilter: 'source/images/icons/**/*/*@2x.png',                   // Где брать иконки Retina
-    retinaImgPath: "../img/sprites/sprite@2x.png",                          // Какой путь указывать для Retina спрайта
+    // retinaImgName: 'sprite@2x.png',                                         // Как назвать Retina спрайт 
+    // retinaSrcFilter: 'source/images/icons/**/*/*@2x.png',                   // Где брать иконки Retina
+    // retinaImgPath: "../img/sprites/sprite@2x.png",                          // Какой путь указывать для Retina спрайта
     cssName: 'sprite.scss',                                                 // Куда записывать генерируемый стилевой файл спрайта
     algorithm: 'binary-tree',                                               // Как будут распологаться иконки в спрайте
     padding: 8                                                              // Расстояние между иконками

@@ -1,0 +1,173 @@
+.form {}
+
+.form__title {
+  margin: 30px 0;
+  // margin-bottom: 30px;
+  font-size: calc(20px + (25 - 20)*((100vw - 320px)/(1360 - 320)));
+  font-weight: 700;
+  text-align: center;
+}
+
+.form__title--small {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.form__title--small:not(:first-of-type) {
+  margin-top: 15px;
+}
+
+.form__item {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 15px;
+
+  label {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e6e7e8;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: #e6e7e8;
+    outline: none;
+    padding: 10px 20px;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    height: 160px;
+    padding: 10px 20px;
+    font-size: 18px;
+    resize: none;
+    border: 1px solid #e6e7e8;
+    border-radius: 30px;
+    outline: none;
+  }
+}
+
+.form__item.hidden {
+  display: none;
+}
+
+.form__item--bordered {
+  input {
+    background-color: transparent;
+  }
+}
+
+.form__item-note {
+  padding-left: 1.5em;
+}
+
+.form__check-group {
+  width: 100%;
+}
+
+.form__check {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+
+  button {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+.form__data-confirm {
+  a {
+    color: $color-text;
+    font-weight: 700;
+  }
+}
+
+.form__btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.form__item-note {
+  margin: 0;
+  color: $color-gray;
+  font-size: 14px;
+}
+
+.form__user-info {
+  width: 100%;
+}
+
+.form__user-item {
+  margin: 0;
+}
+
+.form__check-group-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+@media (min-width: $tablet_s) {
+  .form__check-group--in-row {
+    display: flex;
+  }
+
+  .form__check-item:first-of-type {
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .form,
+  .form__set {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  .form__item--m {
+    width: calc(50% - 10px);
+  }
+
+  .form__item--m:nth-of-type(odd) {
+    margin-right: 20px;
+  }
+
+  .form__submit {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    button {
+      // width: calc(50% - 10px);
+      width: auto;
+      min-width: 200px;
+      max-width: 50%;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop_xs) {
+  .form__title {
+    margin-top: 0;
+  }
+}

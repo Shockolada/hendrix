@@ -1,0 +1,44 @@
+.contacts {
+  @include list-reset;
+  display: flex;
+}
+
+.contacts__item {
+  margin-right: 10px;
+}
+
+.contacts__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #c9c9c9;
+
+  transition: 0.3s border-color linear, 0.3s background-color linear;
+}
+
+.contacts__icon {
+  fill: $color-brown;
+
+  transition: 0.3s fill linear;
+}
+
+.contacts__link:hover {
+  border-color: $color-brown;
+  background-color: $color-brown;
+  .contacts__icon {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: $desktop_s) {
+  .contacts {
+    margin-right: -40px;
+  }
+  .contacts__item {
+    margin-right: 40px;
+  }
+
+}

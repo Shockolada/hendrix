@@ -1,0 +1,165 @@
+$color-bg: #e4e4e4;
+
+.direction {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+
+.direction__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: rgba($color-bg, 0.5);
+  border: none;
+  border-top: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.direction__logo {
+  display: flex;
+  align-items: flex-end;
+  height: 90px;
+  margin-bottom: 13px;
+}
+
+.direction__short-info {
+  max-width: 255px;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.direction__link:focus {
+  outline: none;
+}
+
+.direction__link.active {
+  background-color: rgba($color-bg, 1);
+}
+
+.direction__one {
+  padding: 0 15px;
+  background: $color-bg;
+}
+
+.direction__description {
+  padding: 30px 0;
+}
+
+.direction__logo-side {
+  margin-bottom: 30px;
+}
+
+.direction__logo-link {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.direction__info-side {
+  p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: -1.721px 2.457px 36.86px rgba(255, 255, 255, 0.004);
+  }
+
+  p:first-of-type {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 300;
+  }
+}
+
+.direction__link-side {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 30px;
+
+  a {
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -2px;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 1px;
+      font-size: 15px;
+      background: #000000;
+      transition: 0.3s width;
+    }
+  }
+
+  a:hover,
+  a:focus {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .direction {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .direction__list {
+    display: flex;
+    margin-top: -100px;
+  }
+
+  .direction__link {
+    border: none;
+    background-color: rgba($color-bg, 0.8);
+  }
+
+  .direction__description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .direction__logo-side {
+    width: 40%;
+    margin-top: 60px;
+  }
+
+  .direction__info-side {
+    width: 60%;
+  }
+}
+
+@media (min-width: $desktop_s) {
+  .direction {
+    width: 100%;
+  }
+
+  .direction__logo-side {
+    width: 50%;
+  }
+
+  .direction__info-side {
+    width: 50%;
+  }
+
+  .direction__logo-link {
+    max-width: 450px;
+  }
+}

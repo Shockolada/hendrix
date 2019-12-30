@@ -1,0 +1,27 @@
+.langs {
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  option:hover,
+  option:focus {
+    border: none;
+    outline: none;
+    border: transparent;
+  }
+}
+
+.langs:focus,
+.langs:hover {
+  border: none;
+  outline: none;
+  border: transparent;
+
+  option,
+  option {
+    border: none;
+    outline: none;
+    border: transparent;
+  }
+}

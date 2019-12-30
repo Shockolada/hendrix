@@ -1,0 +1,47 @@
+.hero__wrap {
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url('../img/hero-pattern.png');
+  }
+}
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: calc(40px + (75 - 40) * ((100vw - 320px) / (1360 - 320)));
+  line-height: 1.3;
+  text-shadow: -1.721px 2.457px 36.86px rgba(255, 255, 255, 0.004);
+}
+
+.hero__info {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-shadow: -1.721px 2.457px 36.86px rgba(255, 255, 255, 0.004);
+  line-height: 1.45;
+}
+
+@media (min-width: $tablet) { 
+  .hero__wrap {
+    padding-bottom: 100px;
+  }
+}
+

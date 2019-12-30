@@ -1,0 +1,50 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  margin: 0 -15px;
+}
+
+.main-nav__link {
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: $color-text;
+  cursor: pointer;
+  transition: 0.3s background-color linear;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus,
+.main-nav__link.active {
+  color: #ffffff;
+  background-color: $color-brown;
+}
+
+@media (min-width: $desktop_s) {
+  .main-nav__list {
+    display: flex;
+    margin: 0;
+  }
+  
+  .main-nav__item {
+    margin: 0 15px;
+  }
+  
+  .main-nav__link {
+    display: inline;
+    padding: 0;
+    transition: 0.2s background-color linear;
+  }
+  
+  .main-nav__link:hover,
+  .main-nav__link:focus,
+  .main-nav__link.active {
+    color: $color-brown;
+    background-color: transparent;
+  }
+}

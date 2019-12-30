@@ -1,0 +1,36 @@
+@media (max-width: $desktop_s - 1px) {
+  .mobile-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    padding: 30px 15px;
+    padding-top: 0;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px rgba($color-brown, 0.5);
+
+    transform: translateX(100%);
+
+    transition: transform 0.3s cubic-bezier(.25,1.7,.35,.8), 0.3s top linear;
+  }
+
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  .page-header__wrap.scrolled {
+    .mobile-menu {
+      top: calc(100% + 5px);
+    }
+  }
+}
+
+@media(min-width: $mobile_l) {
+  .mobile-menu {
+    left: unset;
+  }
+}

@@ -1,0 +1,82 @@
+.burger-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 31px;
+  height: 30px;
+  padding: 3px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.burger-btn__icon {
+  display: flex;
+  justify-content: center;
+  width: 25px;
+  height: 15px;
+  position: relative;
+}
+
+.burger-btn__line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: $color-brown;
+}
+
+.burger-btn__line--top,
+.burger-btn__line--bottom {
+  transition: width .1s linear, top .1s linear .1s, transform .1s linear;
+  transform-origin: center;
+}
+
+.burger-btn__line--top {
+  top: 0;
+}
+
+.burger-btn__line--bottom {
+  top: 12px;
+}
+
+.burger-btn__line--middle {
+  top: 6px;
+  right: 0;
+  width: 100%;
+  transition: width .1s linear .3s;
+}
+
+// .hamburger-btn:hover,
+// .hamburger-btn:focus {
+//   .burger-icon__line {
+//     background-color: $color-gray;
+//   }
+// }
+
+.burger-btn.active {
+  .burger-btn__line--middle {
+    width: 0;
+    transition: width .1s linear;
+  }
+
+  .burger-btn__line--top,
+  .burger-btn__line--bottom {
+    top: 5px;
+    width: 13px;
+    transition: width .1s linear, top .1s linear .1s, transform .1s linear .3s;
+  }
+
+  .burger-btn__line--top {
+    transform: rotate(45deg);
+  }
+
+  .burger-btn__line--bottom {
+    transform: rotate(-45deg);
+  }
+}

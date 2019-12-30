@@ -1,0 +1,42 @@
+/* BASIC PAGE NEEDS */
+@import "basic/variables.scss";
+@import "basic/fonts.scss";
+@import "basic/normalize.scss";
+@import "basic/scaffolding.scss";
+@import "basic/visually-hidden.scss";
+@import "basic/no-scroll.scss";
+
+@import "mixins/mixins.scss";
+
+/* LIBRARIES */
+// @import "libs/swiper.scss";
+
+/* MODULES */
+@import "modules/page-content.scss";
+@import "modules/container.scss";
+@import "modules/section.scss";
+@import "modules/modal.scss";
+@import "modules/overlay.scss";
+@import "modules/button.scss";
+// @import "modules/close-btn.scss";
+@import "modules/burger-btn.scss";
+@import "modules/link.scss";
+@import "modules/title.scss";
+@import "modules/langs.scss";
+@import "modules/contacts.scss";
+@import "modules/social.scss";
+@import "modules/webit.scss";
+// @import "modules/check.scss";
+
+/* BLOCKS */
+@import "blocks/main/page-header.scss";
+@import "blocks/main/mobile-menu.scss";
+@import "blocks/main/main-nav.scss";
+@import "blocks/main/page-footer.scss";
+@import "blocks/hero.scss";
+// @import "blocks/form.scss";
+@import "blocks/direction.scss";
+@import "blocks/about-block.scss";
+@import "blocks/text-content.scss";
+
+

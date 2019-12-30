@@ -1,0 +1,125 @@
+.check {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.5em;
+  font-size: 15px;
+  // font-weight: 400;
+
+  cursor: pointer;
+}
+
+.check--bold {
+  font-weight: 700;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.check__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.1em;
+  height: 1.1em;
+  border: none;
+  background-color: #e6e7e8;
+
+  transition: 0.2s linear;
+}
+
+.check__mark {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 65%;
+  height: 40%;
+  transform: rotate(-50deg);
+
+  &::before {
+    content: '';
+    width: 21%;
+    height: 0;
+    background-color: $color-text;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+  }
+
+  &::after {
+    content: '';
+    width: 0;
+    height: 30%;
+    background-color: $color-text;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+  }
+}
+
+.check__radio-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.1em;
+  height: 1.1em;
+  border: none;
+  border-radius: 50%;
+  background-color: #e6e7e8;
+
+  transition: 0.2s linear;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: $color-accent;
+    border-radius: 50%;
+    opacity: 0;
+  }
+}
+
+.check .check__input:checked+.check__box {
+  // border: 1px solid $color-accent;
+
+  .check__mark {
+    &::before {
+      height: 100%;
+      transition: .2s;
+    }
+
+    &::after {
+      width: 100%;
+      transition: .2s 0.2s;
+    }
+  }
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+.check .check__input:checked+.check__radio-box {
+  // border: 1px solid $color-accent;
+
+    &::before {
+      opacity: 1;
+    }
+}

@@ -1,37 +1,33 @@
 .button {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 8px 25px;
   border: none;
   border-radius: 20px;
   text-decoration: none;
-  min-height: 50px;
+  min-height: 40px;
   cursor: pointer;
   color: $color-white;
   background-color: $color-brown;
-  text-transform: uppercase;
   outline: none;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
+  border: 1px solid $color-brown;
 
   transition: all 0.3s;
 }
 
 .button--large {
   min-height: 60px;
+  padding: 15px 30px;
   border-radius: 25px;
   font-size: 25px;
 }
-// .button--transparent {
-//   border: 1px solid $color-brown;
-//   background-color: transparent;
-//   color: $color-text;
-// }
 
-// .button--transparent:disabled {
-//   color: $color-light-gray;
-//   border-color: $color-light-gray;
-//   cursor: not-allowed;
-// }
+.button--o {
+  border: 1px solid $color-brown;
+  background-color: transparent;
+  color: $color-text;
+}
 
 
 .button:disabled {
@@ -41,7 +37,9 @@
 
 .button:hover:not(:disabled),
 .button:focus:not(:disabled) {
-  background-color: $color-gray;
+  background-color: $color-brown-light;
+  color: #ffffff;
+  border-color: $color-brown-light;
 }
 
 .button--transparent:hover:not(:disabled),

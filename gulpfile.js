@@ -102,7 +102,7 @@ gulp.task('pngsprite', function () {
   })); 
 
   const cssStream = spriteData.css.pipe(gulp.dest('source/sass/mixins'));   // Записываем scss файл
-  const imgStream = spriteData.img.pipe(gulp.dest('build/images'));         // Сохраняем спрайты
+  const imgStream = spriteData.img.pipe(gulp.dest('build/img'));         // Сохраняем спрайты
 
   return merge(imgStream, cssStream);                                       //
 });

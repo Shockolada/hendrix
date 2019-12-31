@@ -54,6 +54,37 @@
   position: relative;
   padding: 5px 0;
   padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+.page-footer__list-item--location {
+  &::before {
+    background-image: url('../img/icons/geoposition.png');
+  }
+}
+
+.page-footer__list-item--mail {
+  &::before {
+    background-image: url('../img/icons/envelope.png');
+  }
+}
+
+.page-footer__list-item--phone {
+  &::before {
+    background-image: url('../img/icons/phone.png');
+  }
 }
 
 .page-footer__item-icon {
@@ -120,6 +151,7 @@ a.page-footer__link:focus {
   font-size: 15px;
   text-align: center;
 }
+
 
 @media (min-width: $tablet) {
   .page-footer__top {

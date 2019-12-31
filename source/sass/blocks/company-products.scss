@@ -58,10 +58,12 @@
     margin: 0;
     font-size: 17px;
     font-weight: 300;
+    color: #a1a1a1;
   }
 
   b, strong {
     font-weight: 400;
+    color: #000000;
   }
 
   p:not(:last-of-type) {
@@ -69,7 +71,7 @@
   }
 }
 
-.compani-products__title {
+.company-products__title {
   margin: 0;
   margin-bottom: 15px;
   font-weight: 500;

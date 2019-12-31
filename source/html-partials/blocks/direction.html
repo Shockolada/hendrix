@@ -1,29 +1,28 @@
 <div class="direction container section">
   <div class="direction__list">
-    <!-- <button class="direction__link tabLink" onclick="openTab(event, 'hendrix')" type="button"> -->
-    <button class="direction__link tabLink active" type="button">
+    <button class="direction__link tabLink active" data-id="hendrix" type="button">
       <span class="direction__logo"><img src="img/logo-hb.png" alt="" /></span>
       <span class="direction__short-info">Оптовая продажа товаров для детей</span>
     </button>
-    <button class="direction__link tabLink" type="button">
+    <button class="direction__link tabLink" data-id="optmarket" type="button">
       <span class="direction__logo"><img src="img/logo-optmarket.png" alt="" /></span>
       <span class="direction__short-info">Торговая площадка OPTMARKET</span>
     </button>
-    <button class="direction__link tabLink" type="button">
+    <button class="direction__link tabLink" data-id="sano" type="button">
       <span class="direction__logo"><img src="img/logo-sano.png" alt="" /></span>
       <span class="direction__short-info">Фирменные магазины SANO</span>
     </button>
-    <button class="direction__link tabLink" type="button">
+    <button class="direction__link tabLink" data-id="bb" type="button">
       <span class="direction__logo"><img src="img/logo-bb.png" alt="" /></span>
       <span class="direction__short-info">Сеть магазинов Baby-Boom</span>
     </button>
   </div>
 
   <div class="direction__one">
-    <div class="tabContent" id="hendrix">
+    <div class="tabContent direction__content" id="hendrix">
       <div class="direction__description">
         <div class="direction__logo-side">
-          <a class="direction__logo-link" href="#"><img src="img/logo.svg" alt="" /></a>
+          <a class="direction__logo-link" href="hendrix.html"><img src="img/logo.svg" alt="" /></a>
         </div>
         <div class="direction__info-side">
           <p>
@@ -42,14 +41,14 @@
           </p>
         </div>
         <div class="direction__link-side">
-          <a class="link" href="#">Узнать больше</a>
+          <a class="link" href="hendrix.html">Узнать больше</a>
         </div>
       </div>
     </div>
-    <div class="tabContent" id="optmarket">
+    <div class="tabContent direction__content" id="optmarket">
       <div class="direction__description">
         <div class="direction__logo-side">
-          <a class="direction__logo-link" href="#">
+          <a class="direction__logo-link" href="optmarket.html">
             <img src="img/logo-optmarket.png" alt="" />
           </a>
         </div>
@@ -67,15 +66,15 @@
           </p>
         </div>
         <div class="direction__link-side">
-          <a class="link" href="#">Узнать больше</a>
+          <a class="link" href="optmarket.html">Узнать больше</a>
         </div>
       </div>
     </div>
-    <div class="tabContent" id="sano">
+    <div class="tabContent direction__content" id="sano">
       <div class="direction__description">
         <div class="direction__logo-side">
-          <a class="direction__logo-link" href="#">
-            <img src="img/logo-sano.png" alt="">
+          <a class="direction__logo-link" href="sano.html">
+            <img src="img/logo-sano-big.png" alt="">
           </a>
         </div>
         <div class="direction__info-side">
@@ -92,14 +91,14 @@
           </p>
         </div>
         <div class="direction__link-side">
-          <a class="link" href="#">Узнать больше</a>
+          <a class="link" href="sano.html">Узнать больше</a>
         </div>
       </div>
     </div>
-    <div class="tabContent" id="bb">
+    <div class="tabContent direction__content" id="bb">
       <div class="direction__description">
         <div class="direction__logo-side">
-          <a class="direction__logo-link" href="#"><img src="img/logo-bb.png" alt=""></a>
+          <a class="direction__logo-link" href="bb.html"><img src="img/bb-logo.svg" alt=""></a>
         </div>
         <div class="direction__info-side">
           <p>История деятельности нашей компании насчитывает уже более 20 лет.</p>
@@ -115,28 +114,9 @@
           </p>
         </div>
         <div class="direction__link-side">
-          <a class="link" href="#">Узнать больше</a>
+          <a class="link" href="bb.html">Узнать больше</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- <script>
-  function openTab(evt, tabId) {
-    var i, tabcontent, tablinks;
-
-    tabcontent = document.getElementsByClassName("tabContent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-
-    tablinks = document.getElementsByClassName("tabLink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    document.getElementById(tabId).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-</script> -->

@@ -4,8 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
-  &::after {
+
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -13,9 +14,20 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+  }
+
+  &::before {
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 82%);
+    opacity: 0.4;
+  }
+
+  &::after {
+    content: "";
+    z-index: -1;
     background-image: url('../img/hero-pattern.png');
   }
 }
+
 
 .hero {
   padding-top: 50px;
@@ -36,13 +48,13 @@
   margin: 0;
   margin-bottom: 30px;
   font-size: 20px;
-  text-shadow: -1.721px 2.457px 36.86px rgba(255, 255, 255, 0.004);
+  font-weight: 400;
+  text-shadow: -1.721px 2.457px 36.86px rgba(255, 255, 255, 0.4);
   line-height: 1.45;
 }
 
-@media (min-width: $tablet) { 
+@media (min-width: $tablet) {
   .hero__wrap {
     padding-bottom: 100px;
   }
 }
-

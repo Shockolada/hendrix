@@ -7,6 +7,10 @@
   }
 }
 
+.text-content--large {
+  font-size: 20px;
+}
+
 @media (min-width: $tablet) {
   h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 30px;

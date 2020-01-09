@@ -1,0 +1,72 @@
+.short-info {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.short-info__wrap {
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  // &::before {
+  //   background-image: url('../img/hero-pattern.png');
+  //   z-index: -2;
+  // }
+  
+  &::after {
+    background-image: linear-gradient( 0deg, rgb(0,0,0) 0%, rgb(255,255,255) 82%);
+    opacity: 0.4;
+  }
+}
+
+.short-info__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include list-reset;
+}
+
+.short-info__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.short-info__numbers {
+  margin-bottom: 15px;
+  font-size: 70px;
+  font-weight: 500;
+}
+
+@media (min-width: $tablet) {
+  .short-info__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .short-info__item {
+    width: calc(100% / 3);
+    max-width: unset;
+  }
+}

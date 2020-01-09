@@ -1,0 +1,12 @@
+@media (min-width: $desktop_xs) {
+  .page-with-sidebar {
+    display: flex;
+  }
+
+  .page-with-sidebar__sidebar {
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+}
+
+

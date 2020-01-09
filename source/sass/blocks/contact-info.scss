@@ -1,0 +1,20 @@
+.contact-info {
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.contact-info__form {
+  margin-bottom: 50px;
+}
+
+@media (min-width: $tablet) {
+  .contact-info {
+    padding: 30px;
+  }
+}
+
+@media (min-width: $desktop_xs) {
+  .contact-info__form {
+    margin-bottom: 120px;
+  }
+}

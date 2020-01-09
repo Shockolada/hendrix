@@ -1,0 +1,46 @@
+.contact-block {
+
+}
+
+.contact-block__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.contact-block__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.contact-block__info {
+  color: #a7a7a7;
+}
+
+.contact-block__info:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+a.contact-block__info {
+  text-decoration: none;
+  transition: 0.3s color linear;
+}
+
+a.contact-block__info:hover,
+a.contact-block__info:focus {
+  color: $color-brown;
+}
+
+@media (min-width: $tablet) {
+  .contact-block {
+    display: flex;
+  }
+
+  .contact-block__item {
+    flex-shrink: 0;
+    margin-right: 50px;
+  }
+}

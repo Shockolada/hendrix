@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./html-partials/basic/head.html')
+
+<body class="">
+
+  @@include('./html-partials/blocks/main/page-header--inner.html')
+
+  <!-- PAGE CONTENT
+  ================================================== -->
+  <main class="page-content page-inner">
+
+    <div class="intro__wrap" style="background-image: url('img/hero.jpg');">
+      <div class="intro container">
+        <h1 class="intro__title">Контакты</h1>
+      </div>
+    </div>
+
+    <div class="breadcrumbs__wrap container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link">Контакты</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container section contacts-page">
+      <section class="contact-info">
+        <h2 class="title title--light" data-text-back="Доносчик">Контакты</h2>
+        <form class="form contact-info__form" action="/">
+          <p class="form__item form__item--m">
+            <input type="text" name="" placeholder="Имя" reguired>
+          </p>
+          <p class="form__item form__item--m">
+            <input type="tel" name="" placeholder="Телефон" reguired>
+          </p>
+          <p class="form__item form__item--m">
+            <input type="text" name="" placeholder="Компания">
+          </p>
+          <p class="form__item form__item--m">
+            <input type="email" name="" placeholder="E-mail">
+          </p>
+          <p class="form__item">
+            <textarea name="" placeholder="Сообщение"></textarea>
+          </p>
+
+          <div class="form__submit">
+            <button class="button button--black button--middle" type="submit">Отправить</button>
+          </div>
+        </form>
+
+        <div class="contact-info__block contact-block">
+          <div class="contact-block__item">
+            <p class="contact-block__title">Место расположения</p>
+            <span class="contact-block__info">str. Bucuriei 1/2</span>
+          </div>
+          <div class="contact-block__item">
+            <p class="contact-block__title">Позвоните нам</p>
+            <a class="contact-block__info" href="tel:+37322291315">(+373 22) 29-13-15</a>
+            <a class="contact-block__info" href="tel:+37322292825">(+373 22) 29-28-25</a>
+          </div>
+          <div class="contact-block__item">
+            <p class="contact-block__title">E-mail</p>
+            <a class="contact-block__info" href="mailto:info@hendrix.md">info@hendrix.md</a>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.4179716030303!2d28.83930595135936!3d47.01240013672533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c23c1d174d7%3A0x2da3e477c6e506d4!2zU3RyYWRhIEJ1Y3VyZciZdGkgMSwgQ2hpyJlpbsSDdSwg0JzQvtC70LTQsNCy0LjRjw!5e0!3m2!1sru!2s!4v1578565857185!5m2!1sru!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+
+  </main> <!-- / PAGE CONTENT -->
+
+  @@include('./html-partials/blocks/main/page-footer.html')
+
+  <!-- Java Script
+  ================================================== -->
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,6 +1,12 @@
 .news__wrap {
   padding: 30px 0;
   background-color: $color-light-gray;
+
+  .news__title {
+    &::before {
+      color: #ababab;
+    }
+  }
 }
 
 .news {}
@@ -13,6 +19,7 @@
 
 .news__list {
   @include list-reset;
+  margin-top: 20px;
 }
 
 .news__item {
@@ -37,6 +44,7 @@
 }
 
 .news__link {
+  font-weight: 400;
   transition: 0.3s color;
 }
 
@@ -68,10 +76,6 @@
 }
 
 .news__link-to-news:hover {
-
-  //   .news__img {
-  //     transform: scale(1.1);
-  //   }
   .news__link {
     color: $color-brown-light;
   }
@@ -95,11 +99,15 @@
 
   .news__title {
     margin-bottom: 0;
+
+    &::before {
+      left: 0;
+    }
   }
 }
 
 @media (min-width: $desktop_s) {
-  .news {
+  .news__wrap {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -107,5 +115,15 @@
   .news__item {
     width: calc(100% / 3 - 15px);
     margin-right: 15px;
+  }
+
+  .news__title {
+    &::before {
+      font-size: 80px;
+    }
+  }
+
+  .news__list {
+    margin-top: 40px;
   }
 }

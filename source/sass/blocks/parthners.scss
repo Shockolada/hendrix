@@ -1,0 +1,21 @@
+.parthners__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  background: #fafafa;
+}
+
+.parthners__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin: 10px 15px;
+  margin: 15px 30px;
+
+  img {
+    max-height: 100%;
+  }
+}

@@ -16,6 +16,12 @@
   transition: all 0.3s;
 }
 
+.button--middle {
+  min-height: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
 .button--large {
   min-height: 60px;
   padding: 15px 30px;
@@ -29,9 +35,12 @@
   color: $color-text;
 }
 
+.button--black {
+  background-color: #000000;
+}
 
 .button:disabled {
-  background-color: $color-lightest-gray;
+  background-color: $color-light-gray;
   cursor: not-allowed;
 }
 
